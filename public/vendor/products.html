@@ -300,13 +300,7 @@
   $(function () {
     $("#example1").DataTable({
       "responsive": true, "lengthChange": false, "autoWidth": false,
-      buttons: [   //https://datatables.net/reference/button/collection
-      {
-        extend: 'collection',
-        autoClose: 'true',
-        text: ' Export',
-        className: 'far fa-save fa-2x',
-        buttons: [
+        "buttons": [
       
             {
                 extend:    'copy',
@@ -333,9 +327,6 @@
                 text:      '<i class="far fa-eye"></i> Columns',
                 titleAttr: 'Column Visibilty'
             }
-        
-      ]
-          }
         ]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     $('#example2').DataTable({
