@@ -20,7 +20,7 @@
     .btn-secondary {
       background-color: white !important;
       color: #007bff !important;
-      font-size: 20px !important;
+      font-size: 15px !important;
       border: 0 !important;
     }
     .btn {
@@ -28,7 +28,9 @@
     }
     .dropdown-item.active, .dropdown-item:active {
         color: black !important;
-        background-color: #dee2e6 !important;
+        background-color: white !important;
+        font-weight: bold;
+        
     }
   </style>
 </head>
@@ -1030,7 +1032,9 @@
                 titleAttr: 'PDF'
             },
             {
-                extend:    'colvis'
+                extend:    'colvis',
+                text:      '<i class="far fa-eye"></i> Columns',
+                titleAttr: 'Column Visibilty'
             }
         
       ]
