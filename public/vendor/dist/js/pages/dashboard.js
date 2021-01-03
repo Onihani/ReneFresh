@@ -189,7 +189,7 @@ $(function () {
   }
   var pieOptions = {
     legend: {
-      display: false
+      display: true
     },
     maintainAspectRatio: false,
     responsive: true
