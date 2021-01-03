@@ -239,8 +239,8 @@
                   <div class="chart tab-pane" id="revenue-chart" style="position: relative; height: 300px;">
                       <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>
                    </div>
-                  <div class="chart tab-pane active" id="sales-chart" style="position: relative; height: 300px;">
-                    <canvas id="sales-chart-canvas" height="300" style="height: 300px;"></canvas>
+                  <div class="chart tab-pane active" id="status_pie_chart" style="position: relative; height: 400px;">
+                    <canvas id="status_pie_chart" height="400" style="height: 400px;"></canvas>
                   </div>
                 </div>
               </div><!-- /.card-body -->
@@ -609,9 +609,8 @@ function drawChart()
   ]);
 
   var options = {
-    title : 'Transaction Status Analytics',
-    width:600,
-          height:500,
+    title : '',
+    legend: 'none',
     hAxis : {
       title: 'Percentage',
           minValue: 0,
