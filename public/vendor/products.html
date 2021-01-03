@@ -20,15 +20,16 @@
     .btn-secondary {
       background-color: white !important;
       color: #007bff !important;
-      font-size: 20px !important;
+      font-size: 15px !important;
       border: 0 !important;
     }
     .btn {
-      margin-right: 20px;
+      margin-right: 10px;
     }
     .dropdown-item.active, .dropdown-item:active {
         color: black !important;
-        background-color: #dee2e6 !important;
+        background-color: white !important;
+        font-weight: bold;
     }
   </style>
 </head>
@@ -1002,26 +1003,28 @@
       
       {
                 extend:    'copyHtml5',
-                text:      '<i class="far fa-copy"></i>',
+                text:      '<i class="far fa-copy"></i> Copy',
                 titleAttr: 'Copy'
             },
             {
                 extend:    'excelHtml5',
-                text:      '<i class="far fa-file-excel"></i>',
+                text:      '<i class="far fa-file-excel"></i> Excel',
                 titleAttr: 'Excel'
             },
             {
                 extend:    'csvHtml5',
-                text:      '<i class="far fa-file-alt"></i>',
+                text:      '<i class="far fa-file-alt"></i> CSV',
                 titleAttr: 'CSV'
             },
             {
                 extend:    'pdfHtml5',
-                text:      '<i class="far fa-file-pdf"></i>',
+                text:      '<i class="far fa-file-pdf"></i> PDF',
                 titleAttr: 'PDF'
             },
             {
-                extend:    'colvis'
+                extend:    'colvis',
+                text:      '<i class="far fa-eye"></i> Columns',
+                titleAttr: 'Column Visibilty'
             }
         
       ]
