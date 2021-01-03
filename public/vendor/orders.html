@@ -26,6 +26,10 @@
     .btn {
       margin-right: 20px;
     }
+    .dropdown-item.active, .dropdown-item:active {
+        color: black !important;
+        background-color: #dee2e6 !important;
+    }
   </style>
 </head>
 <body class="hold-transition sidebar-mini">
@@ -1017,9 +1021,7 @@
                 titleAttr: 'PDF'
             },
             {
-                extend:    'colvis',
-                text:      '<i class="far fa-file-pdf"></i>',
-                titleAttr: 'Colvis'
+                extend:    'colvis'
             }
         
       ]
