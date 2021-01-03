@@ -239,7 +239,7 @@
                   <div class="chart tab-pane" id="revenue-chart" style="position: relative; height: 300px;">
                       <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>
                    </div>
-                  <div class="chart tab-pane active" id="status_pie_chart" style="position: relative; height: 400px;">
+                  <div class="chart tab-pane active" id="status_pie_chart" style="position: relative; height: 300px;">
                     <canvas id="status_pie_chart" height="400" style="height: 400px;"></canvas>
                   </div>
                 </div>
@@ -594,37 +594,6 @@
 <script src="dist/js/pages/dashboard.js"></script>
 
 <script>
-  google.charts.load('current', {'packages':['corechart']});
-
-google.charts.setOnLoadCallback(drawChart);
-google.charts.setOnLoadCallback(drawChart1);
-
-
-function drawChart()
-{
-  var data = google.visualization.arrayToDataTable([
-    ['Status', 'Percentage'],
-    ['Hello', 5]
-    
-  ]);
-
-  var options = {
-    title : '',
-    legend: 'none',
-    hAxis : {
-      title: 'Percentage',
-          minValue: 0,
-          maxValue: 100
-    },
-    vAxis : {
-      title: 'Transaction Status'
-    }
-  };
-
-  var chart = new google.visualization.PieChart(document.getElementById('status_pie_chart'));
-
-  chart.draw(data, options);
-}
   $(function () {
 
     /* initialize the external events
@@ -730,6 +699,40 @@ function drawChart()
       $('#new-event').val('')
     })
   })
+
+
+google.charts.load('current', {'packages':['corechart']});
+
+google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChart1);
+
+
+function drawChart()
+{
+  var data = google.visualization.arrayToDataTable([
+    ['Status', 'Percentage'],
+    ['Hello', 5]
+    
+  ]);
+
+  var options = {
+    title : '',
+    height: 350,
+    legend: 'none',
+    hAxis : {
+      title: 'Percentage',
+          minValue: 0,
+          maxValue: 100
+    },
+    vAxis : {
+      title: 'Transaction Status'
+    }
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('status_pie_chart'));
+
+  chart.draw(data, options);
+}
 </script>
 </body>
 </html>
